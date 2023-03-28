@@ -34,8 +34,9 @@ for(let i=0; i < btnopenmodal.length; i++) {
 btnClosemodal.addEventListener('click', closesmodal);
 overlay.addEventListener('click', closesmodal);
 
-
+//we need to pass parameter to function , java script will the function with an event object as argument
 document.addEventListener('keydown', function(e){
+                                    // .contain check for class is present or not
 
     if (e.key === 'Escape' && !modal.classList.contains('hidden')){
             closesmodal();
